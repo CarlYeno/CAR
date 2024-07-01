@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("usine.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+}
+
+#logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#company-logo {
+  width: 100px; /* Ajustez la taille selon vos besoins */
+  height: auto;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  padding: 40px 80px;
+  border-radius: 10px;
+}
+
+#title {
+  font-size: 60px;
+  font-family: "Pacifico", cursive;
+}
+
+#minuteur {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 25px;
+  margin: 10vh auto;
+}
+
+.box {
+  height: 200px;
+  text-align: center;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box > div:first-child {
+  font-size: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.unite {
+  padding: 10px 20px;
+  background-color: #0a0a0a;
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+}
+
+#typewriter {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: blink-caret 0.75s step-end infinite;
+  margin-top: 20px; /* Espace entre le compteur et le texte */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
